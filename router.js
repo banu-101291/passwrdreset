@@ -19,7 +19,7 @@ router.route('/verifyOTP').get(controller.verifyOTP)       //verify generate OTP
 router.route('/createResetSession').get(controller.createResetSession)   //reset all the variables
 
 //put 
-router.route('/updateuser').put(Auth,controller.updateUser)   //is use to update the user profiles
+router.route('`/updateuser`').put(Auth,controller.updateUser)   //is use to update the user profiles
 router.route('/resetPassword').put(controller.verifyUser,controller.resetPassword)  //use to reset password 
 
 
