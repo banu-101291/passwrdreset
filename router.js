@@ -13,7 +13,7 @@ router.route('/registermail').post(registerMail); //send the Email
 router.route('/authenticate').post(controller.verifyUser,(req,res)=>res.end())  //authenticateUser
 router.route('/login').post(controller.login)    //login app
 //get
-router.route('/user/:username').get(controller.getUser)   //user with username
+router.route('/user/:usernae').get(controller.getUser)   //user with username
 router.route('/generateOTP').get(controller.verifyUser,localVariables,controller.generateOTP)     //generate random otp
 router.route('/verifyOTP').get(controller.verifyOTP)       //verify generate OTP
 router.route('/createResetSession').get(controller.createResetSession)   //reset all the variables
